@@ -1,0 +1,9 @@
+.full-width {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #ff00009c !important;
+}
