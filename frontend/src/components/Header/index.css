@@ -6,6 +6,18 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.header .navigation-bar {
+  position: relative;
+  z-index: 2;
+}
+
 
 .custom-style-nav {
   background-color: transparent !important;
@@ -14,11 +26,25 @@
 .logo-name {
   font-size: 30px !important;
   font-weight: 700;
-  color: #ce6d13 !important;
+  color: #ffffff !important;
+  margin-left: 5%;
+}
+.logo-name > strong{
+  color:rgb(255, 122, 14);
+}
+
+.navbar-menu{
+  margin-left: 40%;
+  font-size: 20px;
+}
+.nav-gap {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
 }
 
 .text-white:hover {
-  color: #ce6d13 !important;
+  color: rgb(255, 122, 14) !important;
 }
 
 .custom-link-style>a,
@@ -34,24 +60,34 @@ a.show,
 .header-content {
   text-align: center;
   margin-top: 120px;
+  position: relative;
+  z-index: 2;
 }
 
 .header-content>h1 {
-  color: rgb(250, 59, 11);
+  color: rgb(255, 255, 255);
   font-size: 60px;
 }
 
 .header-content>h3 {
   margin-top: 30px;
-  color: rgb(250, 59, 11);
+  color: rgb(255, 255, 255);
 }
 
 .button {
-  background-color: red;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 122, 14);
   border: none;
   font-size: 25px;
   font-weight: 600;
   margin-left: 45%;
   margin-top: 4%;
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
+}
+.button:hover{
+  background-color: rgb(255, 122, 14);
+  color: white;
+  transition: 0.3s;
 }

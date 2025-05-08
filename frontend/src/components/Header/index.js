@@ -5,9 +5,9 @@ const Header = () => {
   return (
     <>
       <header className='header'>
-        <Navbar expand="xxl" className="mb-3">
+        <Navbar expand="xxl" className="navigation-bar">
           <Container fluid>
-            <Navbar.Brand href="#" className="logo-name">Luxury  Rides</Navbar.Brand>
+            <Navbar.Brand href="#" className="logo-name">Luxury <strong>Rides</strong></Navbar.Brand>
             {/* <img src={bg_image} alt='header logo' width={"80px"} height={"70px"} /> */}
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xxl`} />
             <Navbar.Offcanvas
@@ -21,9 +21,9 @@ const Header = () => {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1" className='text-white'>Home</Nav.Link>
-                  <Nav.Link href="#action2" className='text-white'>About</Nav.Link>
+                <Nav className="navbar-menu nav-gap">
+                  <Nav.Link href="#action1" className='text-white '>Home</Nav.Link>
+                  <Nav.Link href="#action2" className='text-white '>About</Nav.Link>
                   <NavDropdown title="Our Vehicles" id="navbarScrollingDropdown" className='custom-link-style'>
                     <NavDropdown.Item href="#action3">
                       Cars
