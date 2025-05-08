@@ -7,7 +7,9 @@
   background-repeat: no-repeat;
 }
 
-.custom-style-nav {background-color: transparent !important;}
+.custom-style-nav {
+  background-color: transparent !important;
+}
 
 .logo-name {
   font-size: 30px !important;
