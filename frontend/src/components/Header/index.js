@@ -1,5 +1,5 @@
 import { Container, Nav, Navbar, Offcanvas, NavDropdown } from 'react-bootstrap/';
-import bg_image from "../../images/logo.jpg";
+// import bg_image from "../../images/logo.jpg";
 import "./index.css";
 const Header = () => {
   return (
@@ -7,9 +7,8 @@ const Header = () => {
       <header className='header'>
         <Navbar expand="xxl" className="mb-3">
           <Container fluid>
-            <Navbar.Brand href="#">
-              <img src={bg_image} alt='header logo' width={"80px"} height={"70px"} />
-            </Navbar.Brand>
+            <Navbar.Brand href="#" className="logo-name">Luxury  Rides</Navbar.Brand>
+            {/* <img src={bg_image} alt='header logo' width={"80px"} height={"70px"} /> */}
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xxl`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-xxl`}
@@ -23,8 +22,8 @@ const Header = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1" className='text-green'>Home</Nav.Link>
-                  <Nav.Link href="#action2" className='text-green'>About</Nav.Link>
+                  <Nav.Link href="#action1" className='text-white'>Home</Nav.Link>
+                  <Nav.Link href="#action2" className='text-white'>About</Nav.Link>
                   <NavDropdown title="Our Vehicles" id="navbarScrollingDropdown" className='custom-link-style'>
                     <NavDropdown.Item href="#action3">
                       Cars
@@ -34,14 +33,19 @@ const Header = () => {
                       Motorbike
                     </NavDropdown.Item>
                   </NavDropdown>
-                  <Nav.Link href="#action4" className="loc">Locations</Nav.Link>
-                  <Nav.Link href="#action5" className='text-green'>Contact</Nav.Link>
+                  <Nav.Link href="#action4" className="text-white">Locations</Nav.Link>
+                  <Nav.Link href="#action5" className='text-white'>Contact</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
         </Navbar>
-        <h4>test test</h4>
+        <div className="header-content">
+          <h1>Fast & Easy Way To Rent A Car</h1>
+          <h3>A small river named Duden flows by their place and supplies it with the necessary<br />
+            regelialia. It is a paradisematic country, in which roasted parts</h3>
+        </div>
+        <button className="button"> Book Now</button>
       </header>
     </>
   )
