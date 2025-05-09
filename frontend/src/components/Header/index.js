@@ -1,5 +1,5 @@
 import { Container, Nav, Navbar, Offcanvas, NavDropdown } from 'react-bootstrap/';
-// import bg_image from "../../images/logo.jpg";
+import BookForm from '../book-form';
 import "./index.css";
 const Header = () => {
   return (
@@ -45,56 +45,8 @@ const Header = () => {
           <h3>A small river named Duden flows by their place and supplies it with the necessary<br />
             regelialia. It is a paradisematic country, in which roasted parts</h3>
         </div>
-        <button className="button"> Book Now</button>
-        
-        {/* form of location */}
-        <div className="header-container">
-          <div className="form-container">
-            <h2>Make your trip</h2>
 
-            <label>PICK-UP LOCATION</label>
-            <input type="text" placeholder="City, Airport, Station, etc" />
-
-            <label>DROP-OFF LOCATION</label>
-            <input type="text" placeholder="City, Airport, Station, etc" />
-
-            <div className="date-row">
-              <div>
-                <label>PICK-UP DATE</label>
-                <input type="date" />
-              </div>
-              <div>
-                <label>DROP-OFF DATE</label>
-                <input type="date" />
-              </div>
-            </div>
-
-            <label>PICK-UP TIME</label>
-            <input type="time" />
-
-            <button className="rent-button">Rent A Car Now</button>
-          </div>
-
-          <div className="content-right">
-            <h2>Better Way to Rent Your Perfect Cars</h2>
-            <div className="steps">
-              <div className="step">
-                <img src="/icons/location-icon.svg" alt="Location" />
-                <p>Choose Your Pickup Location</p>
-              </div>
-              <div className="step">
-                <img src="/icons/deal-icon.svg" alt="Deal" />
-                <p>Select the Best Deal</p>
-              </div>
-              <div className="step">
-                <img src="/icons/rent-icon.svg" alt="Rent" />
-                <p>Reserve Your Rental Car</p>
-              </div>
-            </div>
-
-            <button className="reserve-button">Reserve Your Perfect Car</button>
-          </div>
-        </div>
+        <BookForm />
 
       </header>
     </>

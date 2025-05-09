@@ -1,5 +1,8 @@
 import React from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
+import { ImLocation2 } from "react-icons/im";
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 import { FaTwitter, FaFacebook, FaInstagram, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import "./index.css"; // Custom CSS
 
@@ -11,9 +14,11 @@ const Footer = () => {
           {/* Column 1 - Brand */}
           <Col md={3}>
             <Card className="footer-card">
-              <Card.Body>
-                <Card.Title className="brand"> <a href="#top" className="footerLink">
-                  Luxury<span className="orange">Rides</span></a>
+              <Card.Body className="custom-card-body">
+                <Card.Title className="card-title">
+                  <h4>
+                    <a href="#top"> Luxury Rides</a>
+                  </h4>
                 </Card.Title>
                 <Card.Text className="desc">
                   Where elegance meets the road, experience unforgettable journeys with our exclusive selection of premium cars and motorbikes.
@@ -27,46 +32,53 @@ const Footer = () => {
             </Card>
           </Col>
 
-          {/* Column 2 - Information */}
+          {/* Column 2 - Contact Info */}
           <Col md={3}>
             <Card className="footer-card">
-              <Card.Body>
-                <Card.Title>Opening Hours</Card.Title>
-                <Card.Text>
-                  <div><strong>Monday-Friday:</strong></div>
-                  <div> 09.00AM-09.00PM </div> <br></br>
-                  <div><strong>Saturday-Sunday</strong></div>
-                  <div>09.00AM-12.00PM</div>
-                </Card.Text>
+              <Card.Body className="custom-card-body">
+                <Card.Title className="card-title">
+                  <h3>Opening Hours</h3>
+                </Card.Title>
+                <Card.Text className="desc">
+                  <h5>Monday - Friday:</h5>
+                  <h5>09.00 AM - 09.00 PM</h5><br></br>
+                  <h5>Saturday - Sunday:</h5>
+                  <h5>09.00 AM - 12.00 PM</h5>
+                  </Card.Text>
+                
               </Card.Body>
             </Card>
           </Col>
 
-          {/* Column 3 - Customer Support */}
+          {/* Column 3 - Contact Details */}
           <Col md={3}>
             <Card className="footer-card">
-              <Card.Body>
-                <Card.Title>Customer Support</Card.Title>
-                <Card.Text>
-                  <div>FAQ</div>
-                  <div>Payment Option</div>
-                  <div>Booking Tips</div>
-                  <div>How it works</div>
-                  <div>Contact Us</div>
-                </Card.Text>
+              <Card.Body className="custom-card-body">
+                <Card.Title className="card-title">
+                  <h3>Customer Support</h3>
+                </Card.Title>
+                <Card.Text className="desc">
+                  <h5>FAQ</h5>
+                  <h5>Payment Option</h5>
+                  <h5>Booking Tips</h5>
+                  <h5>How it works</h5>
+                  <h5>Contact Us</h5>
+                  </Card.Text>
               </Card.Body>
             </Card>
           </Col>
 
-          {/* Column 4 - Contact Info */}
+          {/* Column 4 - Contact Details */}
           <Col md={3}>
             <Card className="footer-card">
-              <Card.Body>
-                <Card.Title>Have a Questions?</Card.Title>
-                <Card.Text>
-                  <div><FaMapMarkerAlt /> Rruga Abdyl Frashëri ,Blloku District, Tiranë 1001, Albania</div>
-                  <div><FaPhoneAlt /> +355 683636243</div>
-                  <div><FaEnvelope /> luxuryrides@gmail.com</div>
+              <Card.Body className="custom-card-body">
+                <Card.Title className="card-title">
+                  <h3>Have a Questions?</h3>
+                </Card.Title>
+                <Card.Text className="desc">
+                  <h5><ImLocation2/> 45 Abdyl Frashëri St., Blloku, Tirana, Albania</h5>
+                  <h5><FaPhone/> + 2 392 3929 210</h5>
+                  <h5><MdEmail/> luxuryrides@gmail.com</h5>
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -75,8 +87,8 @@ const Footer = () => {
 
         {/* Copyright */}
         <Row>
-          <Col className="text-center copyright">
-            <p>Copyright ©2025 All rights reserved | </p>
+          <Col className="copyright-text">
+            <p>Copyright ©2025 All rights reserved  </p>
           </Col>
         </Row>
       </Container>

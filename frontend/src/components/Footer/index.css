@@ -5,62 +5,52 @@
 }
 
 .footer-card {
-  background: transparent;
-  border: none;
-  color: #101411;
+  border: 0px !important;
 }
 
-.footer-card .brand {
-  font-weight: bold;
-  font-size: 20px;
+.custom-card-body {
+  background-color: #000000;
 }
 
-.footer-card .brand .orange {
-  color: #ff8800;
-}
-
-.footer-card .desc {
-  font-size: 14px;
-  margin-top: 10px;
-  line-height: 1.6;
-}
-
-.footer-card .social-icons {
-  margin-top: 15px;
-  font-size: 20px;
-}
-
-.footer-card .social-icons svg {
-  margin-right: 35px;
-  color: #ee7525;
-  background-color: #fefcfa;
-  padding: 8px;
-  border-radius: 50%;
-  font-size: 40px;
-}
-
-.footer-card .card-title {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.footer-card .card-text div {
-  margin-bottom: 8px;
-  font-size: 14px;
-}
-
-.copyright {
-  margin-top: 30px;
-  color: #999;
-  font-size: 13px;
-}
-
-.footerLink  {
-  text-decoration: none;
+.card-title > h4 {
   text-align: center;
-  color: rgb(255, 255, 255);
-  }
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+.card-title > h3{
+  text-align:center;
+  color: rgb(255, 122, 14);
+  font-size: 25px;
+  margin-bottom: 40px;
+}
 
+.card-title>h4>a {
+  text-decoration: none;
+  color: rgb(255, 122, 14);
+}
 
-  
+.desc {
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+}
+.desc > h5{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  font-size: 25px;
+  text-align: center;
+}
+
+.social-icons > svg{
+  margin-right: 15px;
+  color: rgb(255, 122, 14);
+}
+.copyright-text{
+  color: rgb(255, 122, 14);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
