@@ -46,7 +46,9 @@ const Header = () => {
             regelialia. It is a paradisematic country, in which roasted parts</h3>
         </div>
         <button className="button"> Book Now</button>
-        {/* <div className="header-container">
+        
+        {/* form of location */}
+        <div className="header-container">
           <div className="form-container">
             <h2>Make your trip</h2>
 
@@ -92,7 +94,7 @@ const Header = () => {
 
             <button className="reserve-button">Reserve Your Perfect Car</button>
           </div>
-        </div> */}
+        </div>
 
       </header>
     </>
