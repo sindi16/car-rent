@@ -1,69 +1,79 @@
-import { Button, Card, Container, Row, Col, Carousel } from 'react-bootstrap';
-import carOne from "../../images/car-1.jpg";
-import carTwo from "../../images/car-3.jpg";
-import carThree from "../../images/car-10.jpg";
-import "./index.css"
+// import { Button, Card, Container, Row, Col, Carousel } from 'react-bootstrap';
+// import ExampleCarouselImage from 'components/ExampleCarouselImage';
+// import carOne from "../../images/car-1.jpg";
+// import carTwo from "../../images/car-3.jpg";
+// import carThree from "../../images/car-10.jpg";
+// import "./index.css";
 
-const BodyHome = () => {
-  return (
-    <Container>
-      <Row>
-        <Col sm={8}>
-          <Carousel>
-            <Carousel.Item>
-              <img src={carOne} text="First slide" className='full-width' />
-              <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img src={carTwo} text="Second slide" className='full-width' />
-              <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item >
-              <img src={carThree} text="Third slide" className='full-width' />
-              <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                </p>
-              </Carousel.Caption>
-            </Carousel.Item>
-          </Carousel>
-        </Col>
-      </Row>
-    </Container>
-  );
-}
-{/* <Col sm={4}>
-          <Card>
-            <Card.Img variant="top" src={`${carTwo}`} />
-            <Card.Body>
-              <Card.Title>Featured Vehicles</Card.Title>
-              <Card.Text>
-                "Elegance in Motion"
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col sm={4}>
-          <Card>
-            <Card.Img variant="top" src={`${carThree}`} />
-            <Card.Body>
-              <Card.Title>Mercedes Benz</Card.Title>
-              <Card.Text>
-                Elegance in Motion
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
-  );
-} */}
+// const BodyHome = () => {
+//   return (
+//     <>
+//       {/* Featured Vehicles Section */}
+//       <Container className="body-home my-5">
+//         <div className="carousel-title text-center mb-4">
+//           <h2>Featured Vehicles</h2>
+//         </div>
+//         <Row>
+//           <Col sm={12} md={6} className="mx-auto">
+//             <Carousel>
+//               <Carousel.Item>
+//                 <ExampleCarouselImage text="First slide" />
+//                 <Carousel.Caption>
+//                   <h3>First slide label</h3>
+//                   <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+//                 </Carousel.Caption>
+//               </Carousel.Item>
+//               <Carousel.Item>
+//                 <ExampleCarouselImage text="Second slide" />
+//                 <Carousel.Caption>
+//                   <h3>Second slide label</h3>
+//                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+//                 </Carousel.Caption>
+//               </Carousel.Item>
+//               <Carousel.Item>
+//                 <ExampleCarouselImage text="Third slide" />
+//                 <Carousel.Caption>
+//                   <h3>Third slide label</h3>
+//                   <p>
+//                     Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+//                   </p>
+//                 </Carousel.Caption>
+//               </Carousel.Item>
+//             </Carousel>
+//           </Col>
+//         </Row>
+//       </Container>
 
-export default BodyHome;
+//       {/* About Section */}
+//       <section className="about-section my-5">
+//         <div className="about-container">
+//           <div className="about-image">
+//             <img
+//               src="https://images.pexels.com/photos/3764982/pexels-photo-3764982.jpeg"
+//               alt="Luxury car with client"
+//             />
+//           </div>
+//           <div className="about-text">
+//             <h5 className="section-subtitle">ABOUT US</h5>
+//             <h2 className="section-title">Welcome to Carbook</h2>
+//             <p>
+//               A small river named Duden flows by their place and supplies it with
+//               the necessary regelialia. It is a paradisematic country, in which
+//               roasted parts of sentences fly into your mouth.
+//             </p>
+//             <p>
+//               On her way she met a copy. The copy warned the Little Blind Text,
+//               that where it came from it would have been rewritten a thousand
+//               times and everything that was left from its origin would be the
+//               word "and" and the Little Blind Text should turn around and return
+//               to its own, safe country.
+//             </p>
+//             <button className="about-btn">Search Vehicle</button>
+//           </div>
+//         </div>
+//       </section>
+//     </>
+//   );
+// };
+
+// export default BodyHome;
