@@ -78,24 +78,6 @@ a.show,
   color: rgb(255, 255, 255);
 }
 
-.button {
-  background-color: rgb(255, 255, 255);
-  color: rgb(255, 122, 14);
-  border: none;
-  font-size: 25px;
-  font-weight: 600;
-  margin-left: 45%;
-  margin-top: 4%;
-  border-radius: 20px;
-  position: relative;
-  z-index: 2;
-}
-
-.button:hover {
-  background-color: rgb(255, 122, 14);
-  color: white;
-  transition: 0.3s;
-}
 
 /* about booking form
  */
