@@ -1,3 +1,4 @@
+
 .location-page {
     position: relative;
     width: 100%;
@@ -7,7 +8,7 @@
     background-repeat: no-repeat;
 }
 
-.location-page .location {
+.location-page::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -15,7 +16,7 @@
     
 }
 
-.location-page .location-text {
+.location-page .location-title {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -27,34 +28,16 @@
     
 }
 
-.location-page .location-text h1 {
+.location-page .location-title h1 {
     font-size: 50px;
     
 }
 
-.location-page .location-text p {
+.location-page .location-title p {
     font-size: 1.25rem;
     margin-top: 20px;
 }
 
-.location-info {
-    padding: 3rem 1.5rem;
-    background-color: #f9f9f9;
-    color: #090909;
-}
-
-.location-info h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: orange;
-}
-
-.location-info p {
-    max-width: 800px;
-    margin: 0 auto 1rem;
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
 .map-photo {
     width: 60%;
     height: 400px;
@@ -64,3 +47,5 @@
     background-repeat: no-repeat;
     margin-top: 40px;
 }
+
+
