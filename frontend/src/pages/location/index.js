@@ -18,7 +18,6 @@ const Location = () => {
                 className="map-photo"
                 style={{ backgroundImage: `url(${MapPhoto})` }}>
             </div>
-
             <div className="location-info">
                 <h2>Why Visit Us?</h2>
                 <ul>
@@ -49,11 +48,6 @@ const Location = () => {
                     <li>Personalized guidance for choosing your vehicle</li>
                 </ul>
             </div>
-
-
-
-            
-
         </>
     );
 };
