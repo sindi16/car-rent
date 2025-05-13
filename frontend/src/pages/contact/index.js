@@ -3,7 +3,6 @@ import contactimage from '../../images/about.jpg'
 import './index.css';
 import CustomNavbar from "../../components/Navbar";
 import Footer from '../../components/Footer';
-
 const Contact = () => {
     return (
         <>
