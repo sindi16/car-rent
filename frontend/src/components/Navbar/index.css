@@ -1,21 +1,5 @@
-.header {
-  background-image: url("../../images/background.png");
-  width: 100%;
-  height: 700px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
-.header .navigation-bar {
-  position: relative;
-  z-index: 2;
-}
-
-.custom-style-nav {
-  background-color: transparent !important;
-}
-
+/* Logo styling */
 .logo-name {
   font-size: 30px !important;
   font-weight: 700;
@@ -27,27 +11,46 @@
   color: rgb(255, 122, 14);
 }
 
+/* Navbar menu container */
 .navbar-menu {
   margin-left: 40%;
   font-size: 20px;
 }
 
+/* Gap between nav links */
 .nav-gap {
   display: flex;
   gap: 40px;
   margin-top: 20px;
 }
 
-.text-white:hover {
-  color: rgb(255, 122, 14) !important;
-}
 
-.custom-link-style>a,
-a.show,
-.custom-link-style>a:hover {
+
+/* Link colors */
+.navbar-menu .nav-link,
+.navbar-menu .dropdown-toggle {
   color: #ffffff !important;
+  text-decoration: none;
 }
 
-.custom-link-style>div>a {
+/* Hover effect */
+.navbar-menu .nav-link:hover,
+.navbar-menu .dropdown-toggle:hover {
+  color: rgb(255, 122, 14) !important;
+  transition: color 0.3s;
+}
+
+/* Dropdown styling */
+.custom-link-style .dropdown-menu {
+  background-color: #fdf6f6;
+  border: none;
+}
+
+.custom-link-style .dropdown-menu a {
+  color: #131212;
+}
+
+.custom-link-style .dropdown-menu a:hover {
+  background-color: rgb(255, 122, 14);
   color: #000000;
 }

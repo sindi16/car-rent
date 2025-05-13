@@ -1,6 +1,9 @@
 import { ImLocation2 } from "react-icons/im";
 import { GiShakingHands } from "react-icons/gi";
 import { IoCarSportSharp } from "react-icons/io5";
+import { Link } from 'react-router-dom';
+import Contact from "../../pages/contact";
+import './index.css';
 
 
 const BookForm = () => {
@@ -45,7 +48,10 @@ const BookForm = () => {
                     </div>
                 </div>
 
-                <button className="reserve-button">Reserve Your Perfect Car</button>
+                <Link to="/reserve" className="reserve-button">
+                    Reserve
+                </Link>
+
             </div>
         </div>
     )

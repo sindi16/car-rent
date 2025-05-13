@@ -7,10 +7,13 @@ import Footer from '../../components/Footer';
 const Contact = () => {
     return (
         <>
-            <CustomNavbar />
+            
             <div className="headofcontact">
-                <img className="contactimage" src={contactimage} alt="hi" />
+                <CustomNavbar />
+                <div className="contact-background"></div>
             </div>
+
+            
 
             <div className="head-of-contactpage" ></div>
             <div className="contact-container">

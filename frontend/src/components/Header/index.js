@@ -6,8 +6,8 @@ import CustomNavbar from '../../components/Navbar';
 const Header = () => {
   return (
     <>
-      <CustomNavbar />
       <header className='header'>
+        <CustomNavbar />
         <div className="header-content">
           <h1>Fast & Easy Way To Rent A Car</h1>
           <h3>A small river named Duden flows by their place and supplies it with the necessary<br />
