@@ -16,10 +16,11 @@ const CustomNavbar = () => {
           id="offcanvasNavbar-expand-xxl"
           aria-labelledby="offcanvasNavbarLabel-expand-xxl"
           placement="end"
+          className="mobile-nav"
         >
           <Offcanvas.Header closeButton>
-            <Offcanvas.Title id="offcanvasNavbarLabel-expand-xxl">
-              Menu
+            <Offcanvas.Title id="offcanvasNavbarLabel-expand-xxl" className="mobile-menu-title">
+              Luxury<strong>Rides</strong>
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
