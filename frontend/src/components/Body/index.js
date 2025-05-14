@@ -1,46 +1,110 @@
-import { Carousel, Container, Row, Col } from 'react-bootstrap';
+// import { Carousel, Container, Row, Col } from 'react-bootstrap';
+// import carOne from "../../images/car-1.jpg";
+// import carTwo from "../../images/car-3.jpg";
+// import carThree from "../../images/car-10.jpg";
+// import "./index.css";
+
+// const BodyHome = () => {
+//   return (
+//     <>
+//       <div className="home-main-wrapper">
+//         <Container className="body-home my-5">
+//           <div className="carousel-title text-center mb-4">
+//             <h2>Featured Vehicles</h2>
+//           </div>
+//           <Row>
+//             <Col sm={12} md={12} className="mx-auto">
+//               <Carousel className="vehicle-carousel">
+
+
+//                 <Carousel.Item>
+//                   <img className="d-block w-100" src={carOne} alt="First slide" />
+//                   <Carousel.Caption>
+//                     <h3>First slide label</h3>
+//                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+//                   </Carousel.Caption>
+//                 </Carousel.Item>
+
+//                 <Carousel.Item>
+//                   <img className="d-block w-100" src={carTwo} alt="Second slide" />
+//                   <Carousel.Caption>
+//                     <h3>Second slide label</h3>
+//                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+//                   </Carousel.Caption>
+//                 </Carousel.Item>
+
+//                 <Carousel.Item>
+//                   <img className="d-block w-100" src={carThree} alt="Third slide" />
+//                   <Carousel.Caption>
+//                     <h3>Third slide label</h3>
+//                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+//                   </Carousel.Caption>
+//                 </Carousel.Item>
+
+//               </Carousel>
+//             </Col>
+//           </Row>
+//         </Container>
+//       </div >
+
+
+import { Carousel, Container, Row, Col, Button, Card } from "react-bootstrap";
 import carOne from "../../images/car-1.jpg";
 import carTwo from "../../images/car-3.jpg";
 import carThree from "../../images/car-10.jpg";
 import "./index.css";
 
 const BodyHome = () => {
+  const cars = [
+    { image: carOne, title: "Mercedes Grand Sedan", brand: "Mercedes", price: "$500" },
+    { image: carTwo, title: "Audi Sportback", brand: "Audi", price: "$450" },
+    { image: carThree, title: "BMW Roadster", brand: "BMW", price: "$600" },
+    { image: carOne, title: "Lexus RX", brand: "Lexus", price: "$550" },
+    { image: carTwo, title: "Tesla Model S", brand: "Tesla", price: "$700" },
+    { image: carThree, title: "Range Rover Evoque", brand: "Land Rover", price: "$650" },
+  ];
+
+  // Split cars array into chunks of 3
+  const chunkedCars = [];
+  for (let i = 0; i < cars.length; i += 3) {
+    chunkedCars.push(cars.slice(i, i + 3));
+  }
+
   return (
-    <>
-      <div className="home-main-wrapper">
-        <Container className="body-home my-5">
-          <div className="carousel-title text-center mb-4">
-            <h2>Featured Vehicles</h2>
-          </div>
-          <Row>
-            <Col sm={12} md={6} className="mx-auto">
-              <Carousel className="vehicle-carousel">
-                <Carousel.Item>
-                  <img className="d-block w-100" src={carOne} alt="First slide" />
-                  <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img className="d-block w-100" src={carTwo} alt="Second slide" />
-                  <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img className="d-block w-100" src={carThree} alt="Third slide" />
-                  <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              </Carousel>
-            </Col>
-          </Row>
-        </Container>
+    <div className="home-main-wrapper">
+      <Container className="body-home my-5">
+        <div className="carousel-title text-center mb-4">
+          <p className="subheading">WHAT WE OFFER</p>
+          <h2>Featured Vehicles</h2>
         </div>
+        <Carousel indicators={true} className="vehicle-carousel">
+          {chunkedCars.map((carGroup, idx) => (
+            <Carousel.Item key={idx}>
+              <Row className="justify-content-center">
+                {carGroup.map((car, index) => (
+                  <Col key={index} md={4} sm={12} className="mb-4">
+                    <Card className="vehicle-card">
+                      <Card.Img variant="top" src={car.image} />
+                      <Card.Body>
+                        <Card.Title>{car.title}</Card.Title>
+                        <Card.Text className="text-muted">{car.brand}</Card.Text>
+                        <Card.Text>
+                          <span className="price">{car.price}</span>
+                          <span className="text-muted"> /day</span>
+                        </Card.Text>
+                        <div className="d-flex gap-2">
+                          <Button variant="primary" className="w-50">Book now</Button>
+                          <Button variant="success" className="w-50">Details</Button>
+                        </div>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                ))}
+              </Row>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </Container>
 
       <section className="about-section my-5">
         <div className="about-container">
@@ -69,7 +133,7 @@ const BodyHome = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
