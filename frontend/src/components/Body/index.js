@@ -7,38 +7,40 @@ import "./index.css";
 const BodyHome = () => {
   return (
     <>
-      <Container className="body-home my-5">
-        <div className="carousel-title text-center mb-4">
-          <h2>Featured Vehicles</h2>
+      <div className="home-main-wrapper">
+        <Container className="body-home my-5">
+          <div className="carousel-title text-center mb-4">
+            <h2>Featured Vehicles</h2>
+          </div>
+          <Row>
+            <Col sm={12} md={6} className="mx-auto">
+              <Carousel className="vehicle-carousel">
+                <Carousel.Item>
+                  <img className="d-block w-100" src={carOne} alt="First slide" />
+                  <Carousel.Caption>
+                    <h3>First slide label</h3>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img className="d-block w-100" src={carTwo} alt="Second slide" />
+                  <Carousel.Caption>
+                    <h3>Second slide label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img className="d-block w-100" src={carThree} alt="Third slide" />
+                  <Carousel.Caption>
+                    <h3>Third slide label</h3>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+              </Carousel>
+            </Col>
+          </Row>
+        </Container>
         </div>
-        <Row>
-          <Col sm={12} md={6} className="mx-auto">
-            <Carousel>
-              <Carousel.Item>
-                <img className="d-block w-100" src={carOne} alt="First slide" />
-                <Carousel.Caption>
-                  <h3>First slide label</h3>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img className="d-block w-100" src={carTwo} alt="Second slide" />
-                <Carousel.Caption>
-                  <h3>Second slide label</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img className="d-block w-100" src={carThree} alt="Third slide" />
-                <Carousel.Caption>
-                  <h3>Third slide label</h3>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-            </Carousel>
-          </Col>
-        </Row>
-      </Container>
 
       <section className="about-section my-5">
         <div className="about-container">

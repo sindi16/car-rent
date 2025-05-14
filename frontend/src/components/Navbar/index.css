@@ -54,3 +54,88 @@
   background-color: rgb(255, 122, 14);
   color: #000000;
 }
+
+
+@media (max-width: 991px) {
+  /* Ky bllok aplikohet vetëm për ekranet më të vogla se 991px (zakonisht mobile/tablet) */
+
+  .mobile-nav .offcanvas-body {
+    background-color: #111;
+    /* Vendos një ngjyrë të errët për sfondin e menusë mobile */
+    padding: 2rem 1.5rem;
+    /* Hapësirë brenda menu-së në të gjitha anët (lart/poshtë = 2rem, djathtas/majtas = 1.5rem) */
+    display: flex;
+    /* Vendos elementët njëri poshtë tjetrit */
+    flex-direction: column;
+    /* Shfaq çdo element në kolonë (vertikalisht) */
+    gap: 20px;
+    /* Hapësirë prej 20px midis çdo elementi të menusë */
+  }
+
+  .mobile-nav .nav-link,
+  .mobile-nav .dropdown-toggle {
+    color: white !important;
+    /* Ngjyra e tekstit për linkët dhe dropdown-ët është e bardhë */
+    font-size: 18px;
+    /* Madhësia e tekstit */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /* Një vijë e hollë nën secilin link për ndarje vizuale */
+    padding-bottom: 10px;
+    /* Hapësirë nën secilin link */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Efekt kalimi i butë kur ndryshon ngjyra ose lëviz pak */
+  }
+
+  .mobile-nav .nav-link:hover,
+  .mobile-nav .dropdown-toggle:hover {
+    color: rgb(255, 122, 14) !important;
+    /* Kur vendos mouse-in mbi link, ngjyra bëhet portokalli */
+    transform: translateX(5px);
+    /* Lëviz pak në të djathtë për efekt vizual */
+  }
+
+  .mobile-nav .dropdown-menu {
+    background-color: #222;
+    /* Ngjyra e sfondit për menunë dropdown në mobile */
+    border: none;
+    /* Pa kufi (border) për pamje më të pastër */
+  }
+
+  .mobile-nav .dropdown-item {
+    color: white;
+    /* Ngjyra e tekstit për çdo opsion në dropdown */
+  }
+
+  .mobile-nav .dropdown-item:hover {
+    background-color: rgb(255, 122, 14);
+    /* Sfond portokalli kur kalon mbi një item */
+    color: black;
+    /* Ngjyra e tekstit bëhet e zezë për kontrast më të mirë */
+  }
+     .mobile-menu-title {
+       font-size: 26px;
+       /* Madhësia e tekstit për titullin në menu */
+       font-weight: 700;
+       /* Trashësia e tekstit për ta bërë më të dukshëm */
+       color: #ffffff;
+       /* Ngjyra e tekstit është e bardhë */
+       text-align: center;
+       /* Qendron titullin horizontalisht në mes */
+       width: 100%;
+       /* E zgjeron elementin në të gjithë gjerësinë e hapësirës */
+       margin-top: 10px;
+       /* Shton pak hapësirë sipër titullit */
+       text-transform: uppercase;
+       /* Shndërron të gjithë tekstin në shkronja të mëdha */
+       letter-spacing: 2px;
+       /* Hapësirë mes shkronjave për më shumë efekt vizual */
+     }
+  
+     .mobile-menu-title strong {
+       color: rgb(255, 122, 14);
+       /* Ngjyra e pjesës me <strong> bëhet portokalli për kontrast */
+       text-shadow: 1px 1px 5px rgba(255, 122, 14, 0.5);
+       /* Hijë portokalli rreth tekstit për efekt ndriçimi */
+     }
+     
+}

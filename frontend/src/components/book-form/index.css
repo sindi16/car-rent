@@ -8,15 +8,16 @@
   align-items: center;
   padding: 50px 20px;
   background: linear-gradient(to bottom, rgb(255 140 0 / 73%), #131414);
-  border-radius: 10px;
-
-  max-width: 850px;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-top: 20%;
+  max-width: 1050px;
   transform: translateY(-80px);
   /* Pulls the header up */
 }
 
 .form-container {
-  background: #030303;
+  background: #0e0d0db8;
   color: #fff;
   padding: 30px;
   width: 350px;
@@ -66,7 +67,7 @@
   background: #ffffffcc;
   padding: 30px;
   border-radius: 10px;
-  width: 500px;
+  width: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
