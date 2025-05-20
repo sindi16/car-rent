@@ -40,10 +40,10 @@ const Footer = () => {
                   <h3>Opening Hours</h3>
                 </Card.Title>
                 <Card.Text className="desc">
-                  <h5>Monday - Friday:</h5>
-                  <h5>09.00 AM - 09.00 PM</h5><br></br>
-                  <h5>Saturday - Sunday:</h5>
-                  <h5>09.00 AM - 12.00 PM</h5>
+                  <p>Monday - Friday:</p>
+                  <p>09.00 AM - 09.00 PM</p><br></br>
+                  <p>Saturday - Sunday:</p>
+                  <p>09.00 AM - 12.00 PM</p>
                   </Card.Text>
                 
               </Card.Body>
@@ -58,11 +58,11 @@ const Footer = () => {
                   <h3>Customer Support</h3>
                 </Card.Title>
                 <Card.Text className="desc">
-                  <h5>FAQ</h5>
-                  <h5>Payment Option</h5>
-                  <h5>Booking Tips</h5>
-                  <h5>How it works</h5>
-                  <h5>Contact Us</h5>
+                  <p>FAQ</p>
+                  <p>Payment Option</p>
+                  <p>Booking Tips</p>
+                  <p>How it works</p>
+                  <p>Contact Us</p>
                   </Card.Text>
               </Card.Body>
             </Card>
@@ -76,9 +76,9 @@ const Footer = () => {
                   <h3>Have a Questions?</h3>
                 </Card.Title>
                 <Card.Text className="desc">
-                  <h5><ImLocation2/> 45 Abdyl Frashëri St., Blloku, Tirana, Albania</h5>
-                  <h5><FaPhone/> + 2 392 3929 210</h5>
-                  <h5><MdEmail/> luxuryrides@gmail.com</h5>
+                  <p><ImLocation2/> 45 Abdyl Frashëri St., Blloku, Tirana, Albania</p>
+                  <p><FaPhone/> + 2 392 3929 210</p>
+                  <p><MdEmail/> luxuryrides@gmail.com</p>
                 </Card.Text>
               </Card.Body>
             </Card>

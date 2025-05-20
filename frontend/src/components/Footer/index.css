@@ -2,6 +2,7 @@
   background-color: #000000;
   color: #0c0505;
   padding: 40px 0;
+  margin-top:7%;
 }
 
 .footer-card {
@@ -34,7 +35,7 @@
   color: #ffffff;
   font-size: 15px;
 }
-.desc > h5{
+.desc > p{
   font-size: 15px;
   margin-bottom: 20px;
 }
