@@ -1,13 +1,33 @@
-.header {
+/* .header {
   background-image: url("../../images/background.png");
   width: 100%;
   height: 900px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
 /*  */
+
+.homepage-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 0;
+}
 
 .header::before {
   content: "";

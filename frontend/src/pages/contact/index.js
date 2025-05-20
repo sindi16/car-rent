@@ -9,25 +9,24 @@ const Contact = () => {
             
             <div className="headofcontact">
                 <CustomNavbar />
-                <div className="contact-background"></div>
+                <div className="contact-title"> 
+                    <h2> Contact Us</h2>
+                </div>
             </div>
-
+            <div className="title-form">
+                <p>Have a Question? Contact Us!</p>
+            </div>
+        
             
-
-            <div className="head-of-contactpage" ></div>
-            <div className="contact-container">
-                <h2 className="contact-title">Contact Us</h2>
-                <p className="contact-subtitle">Complete the form, or leave us a message:</p>
-
-                <div className="contact-content">
+                {/* <div className="contact-content"> */}
                     {/* Left Image Section */}
-                    <div
+                    {/* <div
                         className="contact-img"
                         style={{ backgroundImage: `url(${contactimage})` }}
-                    ></div>
+                    ></div> */}
 
                     {/* Right Form Section */}
-                    <form className="contact-form">
+                    {/* <form className="contact-form">
                         <div className="form-group">
                             <label htmlFor="firstName">First Name</label>
                             <input type="text" id="firstName" name="firstName" placeholder="Your first name" />
@@ -49,9 +48,10 @@ const Contact = () => {
                         </div>
 
                         <button type="submit" className="contact-btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
+                    </form> */}
+                {/* </div> */}
+                
+                
             <Footer />
         </>
     );
