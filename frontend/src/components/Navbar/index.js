@@ -19,6 +19,7 @@ const CustomNavbar = () => {
           className="mobile-nav"
         >
           <Offcanvas.Header closeButton>
+          
             <Offcanvas.Title id="offcanvasNavbarLabel-expand-xxl" className="mobile-menu-title">
               Luxury<strong>Rides</strong>
             </Offcanvas.Title>
@@ -43,3 +44,6 @@ const CustomNavbar = () => {
 };
 
 export default CustomNavbar;
+
+
+// make the path in index.js after you do th elink at the part this link is such as location at nabar will send you at location page.

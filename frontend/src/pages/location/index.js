@@ -3,7 +3,7 @@ import locationBg from '../../images/location.png';
 import MapPhoto from '../../images/map.png';
 import Footer from '../../components/Footer';
 import CustomNavbar from '../../components/Navbar';
-
+import LocationPage from '../../components/mapslink';
 const Location = () => {
     return (
         <>
@@ -14,6 +14,7 @@ const Location = () => {
                 <div className="location-title">
                     <h1>Our Location</h1>
                     <p>Find us at the heart of the city, ready to serve you.</p>
+                    < LocationPage />
                 </div>
             </div>
             
@@ -21,6 +22,7 @@ const Location = () => {
                 className="map-photo"
                 style={{ backgroundImage: `url(${MapPhoto})` }}>
             </div>
+
 
             <div className="location-info">
                 <h2>Why Visit Us?</h2>

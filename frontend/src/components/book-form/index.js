@@ -28,7 +28,7 @@ const BookForm = () => {
                 <label>PICK-UP TIME</label>
                 <input type="time" />
 
-                <button className="rent-button">Rent A Car Now</button>
+                <button className="rent-button">Rent A Car</button>
             </div>
 
             <div className="content-right">
