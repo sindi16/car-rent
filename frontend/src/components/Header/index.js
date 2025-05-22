@@ -21,8 +21,6 @@ const Header = () => {
           <source src={vidio} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-
-          
         <div className="header-content">
           <h1>Fast & Easy Way To Rent A Car</h1>
           <h3>A small river named Duden flows by their place and supplies it with the necessary<br />
