@@ -9,9 +9,6 @@ const Contact = () => {
 
             <div className="headofcontact">
                 <CustomNavbar />
-                <div className="contact-title">
-                    <h2> Contact Us</h2>
-                </div>
             </div>
             <div className="title-form">
                 <p>Have a Question? Contact Us!</p>
@@ -51,7 +48,6 @@ const Contact = () => {
                     </form> */}
             {/* </div> */}
 
-            <h4>hello</h4>
             <Footer />
         </>
     );

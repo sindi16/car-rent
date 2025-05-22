@@ -89,13 +89,13 @@ Carousel images .carousel img {
 
 
 /* Ensures carousel is pushed below the booking section */
-.home-main-wrapper {
+/* .home-main-wrapper {
   margin-top: 380px;
-}
+} */
 
 /* Carousel styling */
 .body-home {
-  padding-top: 30px;
+  
   padding-bottom: 60px;
 }
 
