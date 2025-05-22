@@ -25,7 +25,7 @@ const CustomNavbar = () => {
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Nav className="navbar-menu nav-gap">
+            <Nav className="navbar-menu nav-gap nav-custom-style">
               <Nav.Link as={Link} to="/" className="text-white">Home</Nav.Link>
               <Nav.Link as={Link} to="/about" className="text-white">About</Nav.Link>
               <NavDropdown title="Our Vehicles" id="navbarScrollingDropdown" className="custom-link-style">

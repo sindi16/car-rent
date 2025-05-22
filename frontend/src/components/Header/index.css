@@ -9,6 +9,8 @@
 
 /*  */
 
+
+
 .homepage-container {
   position: relative;
   height: 100vh;
@@ -26,17 +28,16 @@
   min-height: 100%;
   transform: translate(-50%, -50%);
   object-fit: cover;
-  z-index: 0;
 }
 
-.header::before {
+/* .header::before {
+  overflow: hidden;
   content: "";
   position: absolute;
   inset: 0;
-  height: 900px;
   background: rgba(0, 0, 0, 0.4);
   z-index: 1;
-}
+} */
 
 .header .navigation-bar {
   position: relative;
@@ -45,17 +46,17 @@
 
 .header-content {
   text-align: center;
-  margin-top: 120px;
   position: relative;
-  z-index: 2;
 }
 
 .header-content>h1 {
-  color: rgb(255, 255, 255);
-  font-size: 60px;
+  font-family: "AboveTheBeyond", sans-serif;
+  color: rgb(250, 104, 37);
+  font-size: 30px;
+  
 }
 
 .header-content>h3 {
-  margin-top: 30px;
+  margin-top: 25%;
   color: rgb(255, 255, 255);
 }

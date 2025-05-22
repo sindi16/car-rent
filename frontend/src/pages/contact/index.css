@@ -1,4 +1,4 @@
-/* .contact-container {
+.contact-container {
   padding: 2rem;
   background-color: #f8f9fa;
 }
@@ -19,10 +19,11 @@
 .contact-img {
   flex: 1 ;
   min-height: 500px;
-  background-size: cover; */
-  /* background-position: center; */
-  /* border-radius: 10px;
+  background-size: cover;
+   background-position: center; 
+   border-radius: 10px;
 }
+
 
 .contact-form {
   flex: 1 1 300px;
@@ -48,7 +49,7 @@
   border-radius: 6px;
 } */
 
-/* .contact-btn {
+.contact-btn {
   background-color: #000;
   color: white;
   border: none;
@@ -60,21 +61,20 @@
 
 .contact-btn:hover {
   background-color: #333;
-} */
+}
 
 
-/* Ensure Navbar stays on top
-.navigation-bar {
+/* .navigation-bar {
   position: relative;
   z-index: 1000;
   background: transparent !important;
-} */
+}  */
 
 
 
-/* .contact-title-form{
+.contact-title-form{
   margin-bottom: 50px;
-} */
+}
 
 
 
@@ -99,7 +99,84 @@
   margin-left: 50px;
 
 }
+
+
 .title-form {
   text-align: center;
-
+  margin: 3rem auto 2rem auto;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
 }
+
+.contact-container {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Imazhi */
+.contact-img {
+  flex: 1;
+  min-width: 300px;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+/* Forma */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Etiketa dhe inputet */
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.contact-btn {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #333;
+}
+
+

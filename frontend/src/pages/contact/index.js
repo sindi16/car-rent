@@ -15,15 +15,17 @@ const Contact = () => {
             </div>
 
 
-            {/* <div className="contact-content"> */}
-            {/* Left Image Section */}
-            {/* <div
+            <div className="contact-container">
+                <div className="contact-inner">
+                    {/* Image */}
+                    <div
                         className="contact-img"
                         style={{ backgroundImage: `url(${contactimage})` }}
-                    ></div> */}
+                    ></div>
 
-            {/* Right Form Section */}
-            {/* <form className="contact-form">
+                    {/* Form */}
+                    <form className="contact-form">
+                        <h3>Contact Us</h3>
                         <div className="form-group">
                             <label htmlFor="firstName">First Name</label>
                             <input type="text" id="firstName" name="firstName" placeholder="Your first name" />
@@ -45,8 +47,10 @@ const Contact = () => {
                         </div>
 
                         <button type="submit" className="contact-btn">Send Message</button>
-                    </form> */}
-            {/* </div> */}
+                    </form>
+                </div>
+            </div>
+
 
             <Footer />
         </>

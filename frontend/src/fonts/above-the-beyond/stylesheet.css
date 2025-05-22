@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Above the Beyond Serif';
+    src: url('AbovetheBeyondSerif-Regular.eot');
+    src: local('Above the Beyond Serif Regular'), local('AbovetheBeyondSerif-Regular'),
+        url('AbovetheBeyondSerif-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AbovetheBeyondSerif-Regular.woff2') format('woff2'),
+        url('AbovetheBeyondSerif-Regular.woff') format('woff'),
+        url('AbovetheBeyondSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Above the Beyond Script';
+    src: url('AbovetheBeyond-Script.eot');
+    src: local('Above the Beyond Script'), local('AbovetheBeyond-Script'),
+        url('AbovetheBeyond-Script.eot?#iefix') format('embedded-opentype'),
+        url('AbovetheBeyond-Script.woff2') format('woff2'),
+        url('AbovetheBeyond-Script.woff') format('woff'),
+        url('AbovetheBeyond-Script.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Above the Beyond Serif';
+    src: url('AbovetheBeyondSerif-Italic.eot');
+    src: local('Above the Beyond Serif Italic'), local('AbovetheBeyondSerif-Italic'),
+        url('AbovetheBeyondSerif-Italic.eot?#iefix') format('embedded-opentype'),
+        url('AbovetheBeyondSerif-Italic.woff2') format('woff2'),
+        url('AbovetheBeyondSerif-Italic.woff') format('woff'),
+        url('AbovetheBeyondSerif-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+

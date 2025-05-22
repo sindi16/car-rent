@@ -1,23 +1,17 @@
 /* about booking form
  */
+
 .book-form-container {
-  position: relative;
-  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 50px 20px;
   background: linear-gradient(to bottom, rgb(255 140 0 / 73%), #131414);
-
-  border-radius: 10px;
-  max-width: 850px;
-
   border-radius: 30px;
+  margin-top: 25%;
   margin: 0 auto;
-  margin-top: 20%;
   max-width: 1050px;
   transform: translateY(-80px);
-  /* Pulls the header up */
 }
 
 .form-container {

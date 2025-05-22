@@ -6,6 +6,7 @@ import Contact from "./pages/contact";
 import Location from "./pages/location";
 import About from "./pages/about"; // Optional if you use About
 import reportWebVitals from './reportWebVitals';
+import "./index.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BookForm from './components/book-form';
 
