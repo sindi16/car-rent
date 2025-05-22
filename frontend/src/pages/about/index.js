@@ -19,6 +19,7 @@ const About =  () => {
                     <h1>About Us</h1>
                 </div>
             </div>
+            {/*Services Part*/}
             <div className="about-content">
                 <p>What Services we offer to our clients</p>
             </div>
@@ -117,6 +118,7 @@ const About =  () => {
                     </Col>
                     </Row>
                 </Container>
+            {/*About Part*/}
                 <div class="about-body">
                 <Container>
                     <Row md={4}>
@@ -166,7 +168,7 @@ const About =  () => {
                     </Row>
                 </Container>
                 </div>
-                
+            {/*Faetures Part*/}
                 <div className="about-content">
                 <p>Some Features that Made us Unique</p> 
                 </div>
@@ -262,7 +264,6 @@ const About =  () => {
                     </Row>
                 </Container>
             
-                <h4>hello</h4>
             <Footer />
         </>
     );
