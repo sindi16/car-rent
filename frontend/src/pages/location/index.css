@@ -18,13 +18,22 @@
     
 }
 
-.location-title h1 {
+/* .location-title h1 {
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
     color: white !important;
     margin-top: 27%;
     margin-left: 50px;
     position: relative;
+} */
+.location-title p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(252, 247, 245) !important;
+    margin-top: 10px;
+    margin-left: 50px;
+    position: relative;
+    text-align: center;
 }
 
 .location-content p{
@@ -38,7 +47,7 @@
 
 .map-photo {
     background-image: url('../../images/map.png');
-    width: 60%;
+    width: 100%;
     height: 400px;
     margin: 0 auto;
     background-size: cover;
@@ -47,4 +56,35 @@
     margin-top: 40px;
 }
 
+.location-title p {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    max-width: 600px;
+}
 
+/* Content below the header */
+.location-content {
+    background-color: #fff;
+    color: #333;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.location-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* center horizontally */
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+}
+
+.location-description p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    max-width: 600px;
+    margin-bottom: 20px;
+}

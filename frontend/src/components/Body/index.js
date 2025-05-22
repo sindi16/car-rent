@@ -57,6 +57,7 @@ import carTwo from "../../images/car-3.jpg";
 import carThree from "../../images/car-10.jpg";
 import carfour from "../../images/bg_1.jpg";
 import carfive from "../../images/lambo.jpeg";
+import saloncar from "../../images/salon.png";
 import "./index.css";
 
 const BodyHome = () => {
@@ -195,6 +196,34 @@ const BodyHome = () => {
           </Row>
         </Container>
       </div >
+
+      {/* About Section */}
+      <section className="about-section my-5">
+        <div className="about-container">
+          <div className="about-image">
+            {/* the import of an image */}
+            <img src={`${saloncar}`} />
+          </div>
+          <div className="about-text">
+            <h5 className="section-subtitle">ABOUT US</h5>
+            <h2 className="section-title">Welcome to Carbook</h2>
+            <p>
+              A small river named Duden flows by their place and supplies it with
+              the necessary regelialia. It is a paradisematic country, in which
+              roasted parts of sentences fly into your mouth.
+            </p>
+            <p>
+              On her way she met a copy. The copy warned the Little Blind Text,
+              that where it came from it would have been rewritten a thousand
+              times and everything that was left from its origin would be the
+              word "and" and the Little Blind Text should turn around and return
+              to its own, safe country.
+            </p>
+            <button className="about-btn">Search Vehicle</button>
+          </div>
+        </div>
+      </section>
+
     </>
   );
 };

@@ -15,6 +15,7 @@
 .navbar-menu {
   margin-left: 40%;
   font-size: 20px;
+ 
 }
 
 /* Gap between nav links */
@@ -31,6 +32,7 @@
 .navbar-menu .dropdown-toggle {
   color: #ffffff !important;
   text-decoration: none;
+  
 }
 
 /* Hover effect */
@@ -138,4 +140,11 @@
        /* Hijë portokalli rreth tekstit për efekt ndriçimi */
      }
      
+}
+
+
+.navigation-bar {
+  width: 100%;
+  position: fixed;
+  background-color: rgb(0 0 0 / 46%);
 }

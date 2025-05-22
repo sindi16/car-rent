@@ -7,7 +7,6 @@ const LocationPage = () => {
 
   return (
     <Container className="text-center mt-5">
-      <h1>Visit Our Location</h1>
       <p>We are located in the heart of Tirana. Click below to find us on the map.</p>
 
       <Button
