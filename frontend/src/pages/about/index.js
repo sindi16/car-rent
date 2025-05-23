@@ -119,7 +119,7 @@ const About =  () => {
                     </Row>
                 </Container>
             {/*About Part*/}
-                <div class="about-body">
+                <div className="about-body">
                 <Container>
                     <Row md={4}>
                         <Col>

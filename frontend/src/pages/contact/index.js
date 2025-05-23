@@ -25,7 +25,6 @@ const Contact = () => {
 
                     {/* Form */}
                     <form className="contact-form">
-                        <h3>Contact Us</h3>
                         <div className="form-group">
                             <label htmlFor="firstName">First Name</label>
                             <input type="text" id="firstName" name="firstName" placeholder="Your first name" />

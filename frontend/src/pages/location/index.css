@@ -1,13 +1,11 @@
-
 .location-page {
     background-image: url('../../images/location.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
+    overflow: hidden;
     height: 600px;
-    position: relative;
-    z-index: 1;       
 }
 
 .location-page::before {
@@ -15,32 +13,25 @@
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.4);
-    
+    height: 600px;
 }
 
-/* .location-title h1 {
-    font-size: 50px;
-    font-family: 'Times New Roman', Times, serif;
-    color: white !important;
-    margin-top: 27%;
-    margin-left: 50px;
-    position: relative;
-} */
-.location-title p{
+.location-title{
+    margin-top: 250px;
+}
+
+.location-title p {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(252, 247, 245) !important;
-    margin-top: 10px;
-    margin-left: 50px;
-    position: relative;
     text-align: center;
+    position: relative;
 }
 
-.location-content p{
+.location-content p {
     font-size: 50px;
     font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
-    margin-top: 20px;
     color: rgb(255, 122, 14);
     text-align: center;
 }
@@ -56,11 +47,6 @@
     margin-top: 40px;
 }
 
-.location-title p {
-    font-size: 1.2rem;
-    color: #f1f1f1;
-    max-width: 600px;
-}
 
 /* Content below the header */
 .location-content {

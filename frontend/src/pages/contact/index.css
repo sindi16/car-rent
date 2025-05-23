@@ -64,21 +64,9 @@
 }
 
 
-/* .navigation-bar {
-  position: relative;
-  z-index: 1000;
-  background: transparent !important;
-}  */
-
-
-
 .contact-title-form{
   margin-bottom: 50px;
 }
-
-
-
-
 
 .headofcontact {
   
@@ -92,21 +80,12 @@
  
 }
 
-.contact-title h2{
-  font-size: 50px;
-  color: rgb(250, 246, 245);
-  margin-top: 17%;
-  margin-left: 50px;
-
-}
-
-
-.title-form {
+.title-form > p{
   text-align: center;
   margin: 3rem auto 2rem auto;
-  font-size: 24px;
+  font-size: 50px;
   font-weight: 600;
-  color: #333;
+  color: rgb(250, 104, 37);
 }
 
 .contact-container {
@@ -165,18 +144,20 @@
 }
 
 .contact-btn {
-  background-color: #000;
-  color: white;
+  background-color: rgb(250, 104, 37);
+  color: rgb(0, 0, 0);
   border: none;
   padding: 0.75rem;
   cursor: pointer;
   border-radius: 6px;
   font-weight: bold;
   transition: background-color 0.3s;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .contact-btn:hover {
-  background-color: #333;
+  background-color: rgb(248, 136, 84);
 }
 
 

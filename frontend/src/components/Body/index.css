@@ -34,8 +34,9 @@ Carousel images .carousel img {
 }
 
 .section-subtitle {
-  color: #999;
-  font-size: 1rem;
+  color: #000000;
+  font-weight: 700;
+  font-size: 15px;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
@@ -44,29 +45,29 @@ Carousel images .carousel img {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #333;
+  color: rgb(250, 104, 37);
 }
 
 .about-text p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #555;
+  color: #474747;
 }
 
 .about-btn {
   margin-top: 20px;
   padding: 12px 25px;
   font-size: 1rem;
-  font-weight: 600;
-  background-color: #212529;
-  color: white;
+  font-weight: 700;
+  background-color: rgb(250, 104, 37);
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 5px;
   transition: all 0.3s ease;
 }
 
 .about-btn:hover {
-  background-color: #343a40;
+  background-color: rgb(248, 136, 84);
   transform: translateY(-2px);
   cursor: pointer;
 }

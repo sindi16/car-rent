@@ -14,8 +14,7 @@ const LocationPage = () => {
         size="lg"
         href={googleMapsUrl}
         target="_blank"
-        rel="noopener noreferrer"
-      >
+        rel="noopener noreferrer">
         Open in Google Maps
       </Button>
     </Container>

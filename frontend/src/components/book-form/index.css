@@ -8,10 +8,11 @@
   padding: 50px 20px;
   background: linear-gradient(to bottom, rgb(255 140 0 / 73%), #131414);
   border-radius: 30px;
-  margin-top: 25%;
   margin: 0 auto;
   max-width: 1050px;
   transform: translateY(-80px);
+  margin-top: 7%;
+  overflow: hidden;
 }
 
 .form-container {
