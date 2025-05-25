@@ -77,15 +77,53 @@
   height: 600px;
   background-position: center;
   position: relative;
+  overflow: hidden;
  
 }
+.headofcontact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 600px;
+}
 
+.contact-title {
+  margin-top: 20%;
+  text-align: center;
+}
+
+.contact-title h1 {
+  font-size: 30px;
+  font-family: "AboveTheBeyond",sans-serif;
+  color: rgb(255, 122, 14);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: AboutUsAnimation 0.8s ease forwards;
+}
+
+.contact-title p {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(232, 226, 226);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: ContactUsAnimation 0.8s ease forwards;
+}
+
+@keyframes ContactUsAnimation {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .title-form > p{
   text-align: center;
   margin: 3rem auto 2rem auto;
   font-size: 50px;
   font-weight: 600;
   color: rgb(250, 104, 37);
+  
 }
 
 .contact-container {

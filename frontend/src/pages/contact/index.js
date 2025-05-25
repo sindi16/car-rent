@@ -9,6 +9,12 @@ const Contact = () => {
 
             <div className="headofcontact">
                 <CustomNavbar />
+                <div className="contact-title">
+                    <h1>Let’s connect</h1>
+                    <p>Have questions, special requests, or ready to book your next ride?  <br></br>
+                        Our team is here to assist you every step of the way. Reach out to us via phone, email, or visit us in<br></br>
+                        person — we’d love to hear from you. Your luxury journey starts with a conversation.</p>
+                </div>
             </div>
             <div className="title-form">
                 <p>Have a Question? Contact Us!</p>

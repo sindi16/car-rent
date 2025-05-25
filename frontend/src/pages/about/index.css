@@ -1,4 +1,4 @@
-.about-background{
+.about-background {
     background-image: url('../../images/about-img.jpg');
     background-size: cover;
     background-position: center;
@@ -6,28 +6,58 @@
     width: 100%;
     height: 600px;
     overflow: hidden;
-    
+
 }
 
+.about-background::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 600px;
+}
 
-.about-title h1{
-    font-size: 50px;
-    font-family:'Times New Roman', Times, serif;
+.about-title {
+    margin-top: 20%;
+    text-align: center;
+}
+
+.about-title h1 {
+    font-size: 30px;
+    font-family: "AboveTheBeyond", sans-serif;
+    color: rgb(255, 122, 14);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: AboutUsAnimation 0.8s ease forwards;
+}
+
+.about-title p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
     color: white;
-    margin-left: 50px;
-    margin-top:25%;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: AboutUsAnimation 0.8s ease forwards;
 }
 
-.about-content p{
+@keyframes AboutUsAnimation {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-content p {
     font-size: 50px;
     font-weight: 700;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     margin-top: 20px;
     color: rgb(255, 122, 14);
     text-align: center;
 }
+
 /*services section*/
-.services-card{
+.services-card {
     margin-top: 20px;
     border-radius: 10px !important;
     transition: transform 0.5s ease;
@@ -35,56 +65,62 @@
     cursor: pointer;
 }
 
-.services-card:hover{
+.services-card:hover {
     transform: translateX(-3px);
     box-shadow: 0 12px 20px rgb(174, 172, 171);
     color: rgb(0, 0, 0);
 }
-.services-card-body{
+
+.services-card-body {
     border-radius: 10px;
     background-color: rgb(236, 227, 219);
 }
-.services-card-title{
+
+.services-card-title {
     text-align: center;
     color: rgb(0, 0, 0);
     font-size: 20px !important;
 }
-.card:hover .services-card-title{
-    color:rgb(255, 122, 14);
+
+.card:hover .services-card-title {
+    color: rgb(255, 122, 14);
 }
-.services-card-text{
+
+.services-card-text {
     line-height: 30px;
     color: black;
     font-size: 18px;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
 
 /*about-section*/
-.about-body{
+.about-body {
     background-color: black;
     height: 200px;
     margin-top: 7%;
     margin-bottom: 5%;
 }
 
-.about-card{
+.about-card {
     margin-top: 20px;
     border-radius: 20px;
-    border:0px !important;
+    border: 0px !important;
 }
-.about-card-body{
-    background-color:rgb(0, 0, 0);
+
+.about-card-body {
+    background-color: rgb(0, 0, 0);
 }
 
 /* edit of text inside black block */
-.about-card-title{
+.about-card-title {
     text-align: center;
     color: rgb(225, 107, 39) !important;
     font-size: 40px !important;
 }
-.about-card-text{
+
+.about-card-text {
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 25px;
@@ -92,13 +128,14 @@
 
 /*review section*/
 
-.review-card{
+.review-card {
     margin-top: 20px;
     border-radius: 10px !important;
     transition: transform 0.5s ease;
     box-shadow: 0.3s ease;
     cursor: pointer;
 }
+
 .review-card:hover {
     transform: translateX(-3px);
     box-shadow: 0 12px 20px rgb(174, 172, 171);
@@ -110,11 +147,12 @@
     background-color: rgb(236, 227, 219);
 }
 
-.review-card-title{
+.review-card-title {
     text-align: center;
     color: rgb(0, 0, 0);
     font-size: 20px !important;
 }
+
 .card:hover .review-card-title {
     color: rgb(255, 122, 14);
 }
@@ -124,8 +162,9 @@
     color: black;
     font-size: 18px;
     text-align: center;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
-.review-card-footer{
+
+.review-card-footer {
     text-align: center;
 }

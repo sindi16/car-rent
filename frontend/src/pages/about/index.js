@@ -16,7 +16,9 @@ const About =  () => {
             <div className="about-background">
                 <CustomNavbar />
                 <div className="about-title">
-                    <h1>About Us</h1>
+                    <h1>Where elegance meets the road</h1>
+                    <p>At LUXURY RIDES, we believe that every journey deserves style, comfort, <br></br>
+                        and a touch of sophistication.From premium cars to unforgettable experiences, we’re here to redefine the way you travel.</p>
                 </div>
             </div>
             {/*Services Part*/}

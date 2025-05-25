@@ -9,6 +9,7 @@ const Location = () => {
             <div className="location-page">
                 <CustomNavbar />
                 <div className="location-title">
+                    <h1>Visit us at our central location.</h1>
                     <p>
                         Let the road lead you to us...<br />
                         Where passion, design, and experience come together.<br />

@@ -3,7 +3,7 @@ import { Button, Container } from 'react-bootstrap';
 import './index.css';
 
 const LocationPage = () => {
-  const googleMapsUrl = "https://maps.app.goo.gl/xrqTDChj62cYntzM8?g_st=com.google.maps.preview.copy"; // Replace with your location
+const googleMapsUrl = "https://maps.app.goo.gl/xrqTDChj62cYntzM8?g_st=com.google.maps.preview.copy"; // Replace with your location
 
   return (
     <Container className="text-center mt-5">
