@@ -12,7 +12,7 @@
 
 /* Navbar menu container */
 .navbar-menu {
-  margin-left: 40%;
+  margin-left: 30%;
   font-size: 20px;
 
 }
@@ -159,4 +159,16 @@
 .navbar-menu .active-link,
 .mobile-nav .active-link {
   color: rgb(255, 122, 14) !important;
+}
+
+
+
+/* Optional styling for the search icon and box */
+.search-icon:hover {
+  color: #ff5722;
+}
+
+.search-box-container input {
+  border-radius: 20px;
+  padding: 6px 12px;
 }

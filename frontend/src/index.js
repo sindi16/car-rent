@@ -5,10 +5,12 @@ import Home from "./pages/home";
 import Contact from "./pages/contact";
 import Location from "./pages/location";
 import About from "./pages/about"; // Optional if you use About
+import Vehicles from "./pages/vehicles";
+import AdminVehicles from './pages/Admin/Vehicles';
 import reportWebVitals from './reportWebVitals';
 import "./index.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import BookForm from './components/book-form';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,8 +20,12 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/locations" element={<Location />} />
-        <Route path="/about" element={<About />} /> {/* Optional */}
+        <Route path="/about" element={<About />} />
         <Route path="/reserve" element={<Contact />} />
+        <Route path="/our-vehicles" element={<Vehicles />} />
+
+        <Route path="/admin-vehicles" element={<AdminVehicles />} />
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

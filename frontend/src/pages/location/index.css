@@ -34,12 +34,13 @@
     color: rgb(252, 247, 245) !important;
     text-align: center;
     position: relative;
+    /* from here with this synta */
     opacity: 0;
     transform: translateY(30px);
     animation: LocationAnimation 0.8s ease forwards;
 }
 
-
+/* this makes the text to move  */
 @keyframes LocationAnimation {
     to {
         opacity: 1;

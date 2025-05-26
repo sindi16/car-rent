@@ -1,13 +1,18 @@
-
 // src/components/NavbarOnly.js
+import React, { useState } from "react";
 import { Container, Nav, Navbar, Offcanvas, NavDropdown } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import { useLocation } from 'react-router-dom'; // Importing useLocation to get the current path
+import { Link, useLocation } from 'react-router-dom';
 import "./index.css";
+import { FaSearch } from "react-icons/fa";
+import { GiCarKey } from "react-icons/gi";
 
 const CustomNavbar = () => {
-  const location = useLocation(); // Using useLocation to access the current path
-  const isActive = (path) => location.pathname === path; // Function to check if the current path matches the given path
+  const location = useLocation();
+  const isActive = (path) => location.pathname === path;
+
+  // 🔸 State for showing the search box
+  const [showSearch, setShowSearch] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
 
   return (
     <Navbar expand="xxl" className="navigation-bar">
@@ -31,14 +36,37 @@ const CustomNavbar = () => {
             <Nav className="navbar-menu nav-gap nav-custom-style">
               <Nav.Link as={Link} to="/" className={`text-white ${isActive("/") ? "active-link" : ""}`}>Home</Nav.Link>
               <Nav.Link as={Link} to="/about" className={`text-white ${isActive("/about") ? "active-link" : ""}`}>About</Nav.Link>
-              <NavDropdown title="Our Vehicles" id="navbarScrollingDropdown" className={`custom-link-style ${location.pathname.includes("/cars") || location.pathname.includes("/motorbikes") ? "active-link" : ""}`}>
-                <NavDropdown.Item as={Link} to="/cars">Cars</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item as={Link} to="/motorbikes">Motorbike</NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link as={Link} to="/our-vehicles" className={`text-white ${isActive("/our-vehicles") ? "active-link" : ""}`}>Our vehicles</Nav.Link>
               <Nav.Link as={Link} to="/locations" className={`text-white ${isActive("/locations") ? "active-link" : ""}`}>Locations</Nav.Link>
               <Nav.Link as={Link} to="/contact" className={`text-white ${isActive("/contact") ? "active-link" : ""}`}>Contact</Nav.Link>
+
+              {/* 🔸 Search Icon with toggle functionality */}
+              <Nav.Link
+                onClick={() => setShowSearch(!showSearch)}
+                className="text-white search-icon"
+                style={{ cursor: "pointer" }}
+              >
+                <FaSearch />
+              </Nav.Link>
+
+              <Nav.Link as={Link} to="/booking" className={`text-white ${isActive("/booking") ? "active-link" : ""}`}>
+                <GiCarKey />
+              </Nav.Link>
             </Nav>
+
+            {/* 🔸 Search Box appears here if toggled */}
+            {showSearch && (
+              <div className="search-box-container mt-3">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Search vehicles..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  style={{ maxWidth: "200px" }}
+                />
+              </div>
+            )}
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>
@@ -46,8 +74,4 @@ const CustomNavbar = () => {
   );
 };
 
-
 export default CustomNavbar;
-
-
-// make the path in index.js after you do th elink at the part this link is such as location at nabar will send you at location page.
