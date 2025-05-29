@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import { Modal, Button, Form, Container, Row, Col } from 'react-bootstrap';
+import { useCarContext } from '../../../context/CarContext';
 
 const CreateVehicle = ({ open, close }) => {
   const [values, setValues] = useState({ brand: '', model: '', color: '', engine: '', alimentation: '', year: 0, transmission: false, images: [] });
+
+  const { createCar,cars } = useCarContext();
+
+  console.log('cars', cars);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -11,14 +16,12 @@ const CreateVehicle = ({ open, close }) => {
   const handleChange = (event) => {
     const { name, value } = event.target;
 
-    //console.log("event.target------", event.target);
-
-    console.log("name------", name);
-    console.log("value------", value);
-    setValues((prevValues) => ({
-      ...prevValues,
-      [name] : value,
-    }))
+    setValues((prevState) => {
+      return {
+        ...prevState,
+        [name]: name === 'transmission' ? event.target.checked : value,
+      }
+    })
   }
 
   return (
