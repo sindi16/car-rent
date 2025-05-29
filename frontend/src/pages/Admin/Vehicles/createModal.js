@@ -3,14 +3,18 @@ import { Modal, Button, Form, Container, Row, Col } from 'react-bootstrap';
 import { useCarContext } from '../../../context/CarContext';
 
 const CreateVehicle = ({ open, close }) => {
-  const [values, setValues] = useState({ brand: '', model: '', color: '', engine: '', alimentation: '', year: 0, transmission: false, images: [] });
+  const [values, setValues] = useState({ brand: '', model: '', color: '', engine: '', alimentation: '', year: 0, transmission: false, available: true, images: [], description: "test", type: "car" });
 
-  const { createCar,cars } = useCarContext();
+  const { createCar, cars } = useCarContext();
 
-  console.log('cars', cars);
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    try {
+      const result = await createCar(values);
+      console.log('result', result);
+    } catch (error) {
+
+    }
   }
 
   const handleChange = (event) => {

@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_URL = 'http://localhost:3000/api/vehicles';
+const API_URL = 'http://localhost:3000/vehicles';
 
 const get_cars_service = async () => {
   const result = await axios.get(`${API_URL}/all`);

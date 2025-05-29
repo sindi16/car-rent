@@ -1,11 +1,17 @@
 import { useState } from 'react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import CreateVehicle from './createModal';
+import { useCarContext } from '../../../context/CarContext';
 const AdminVehicles = () => {
+
+  const { cars } = useCarContext();
+
   const [showModal, setShowModal] = useState(false);
 
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
+
+  console.log('cars', cars);
 
   return (
     <>
@@ -27,6 +33,16 @@ const AdminVehicles = () => {
           Open Modal
         </Button>
       </Container>
+
+      {
+        cars.data?.map((el, index) => {
+          return (
+            <>
+              <h4>{el.brand} {el.model}</h4>
+            </>
+          )
+        })
+      }
 
       <CreateVehicle open={showModal} close={handleClose} />
 

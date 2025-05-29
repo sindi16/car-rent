@@ -11,6 +11,7 @@ export class VehiclesController {
     @Post('create')
     public async createVehicle(@Body() bodyParam: VehicleDto): Promise<VehicleResponse> {
         try {
+            console.log("Creating vehicle with data: ", bodyParam);
             const result = await this.vehiclesService.create(bodyParam);
             return {
                 status: 200,
