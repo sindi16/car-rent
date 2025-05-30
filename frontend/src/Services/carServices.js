@@ -7,7 +7,19 @@ const get_cars_service = async () => {
 }
 
 const create_cars_service = async (data) => {
-  const result = await axios.post(`${API_URL}/create`, data);
+  const vehicles = {
+    brand: data.brand,
+    model: data.model,
+    color: data.color,
+    engine: data.engine,
+    alimentation: data.alimentation,
+    year: parseInt(data.year),
+    transmission: data.transmission,
+    type: data.type,
+    available: data.available,
+    description: data.description,
+  }
+  const result = await axios.post(`${API_URL}/create`, vehicles);
   return result;
 }
 
