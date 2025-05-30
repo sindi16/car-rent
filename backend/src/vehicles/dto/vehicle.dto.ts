@@ -9,9 +9,9 @@ export class VehicleDto {
     @IsNotEmpty()
     model: string;
 
-    @IsString()
+    @IsNumber()
     @IsNotEmpty()
-    year: string;
+    year: number;
 
     @IsString()
     @IsNotEmpty()

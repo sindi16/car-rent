@@ -10,9 +10,6 @@ const AdminVehicles = () => {
 
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
-
-  console.log('cars', cars);
-
   return (
     <>
       <Navbar bg="dark" variant="dark" expand="lg">
@@ -36,9 +33,10 @@ const AdminVehicles = () => {
 
       {
         cars.data?.map((el, index) => {
+          console.log('el', el);
           return (
             <>
-              <h4>{el.brand} {el.model}</h4>
+              <h4>{el.brand} {el.model} {el.color}</h4>
             </>
           )
         })
