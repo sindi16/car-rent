@@ -17,11 +17,11 @@
 }
 
 .contact-img {
-  flex: 1 ;
+  flex: 1;
   min-height: 500px;
   background-size: cover;
-   background-position: center; 
-   border-radius: 10px;
+  background-position: center;
+  border-radius: 10px;
 }
 
 
@@ -47,9 +47,9 @@
   padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 6px;
-} */
+}
 
-.contact-btn {
+*/ .contact-btn {
   background-color: #000;
   color: white;
   border: none;
@@ -64,12 +64,12 @@
 }
 
 
-.contact-title-form{
+.contact-title-form {
   margin-bottom: 50px;
 }
 
 .headofcontact {
-  
+
   background-size: cover;
   background-image: url('../../images/cnt1.png');
   background-repeat: no-repeat;
@@ -78,8 +78,9 @@
   background-position: center;
   position: relative;
   overflow: hidden;
- 
+
 }
+
 .headofcontact::before {
   content: "";
   position: absolute;
@@ -95,7 +96,7 @@
 
 .contact-title h1 {
   font-size: 30px;
-  font-family: "AboveTheBeyond",sans-serif;
+  font-family: "AboveTheBeyond", sans-serif;
   color: rgb(255, 122, 14);
   opacity: 0;
   transform: translateY(30px);
@@ -117,13 +118,14 @@
     transform: translateY(0);
   }
 }
-.title-form > p{
+
+.title-form>p {
   text-align: center;
   margin: 3rem auto 2rem auto;
   font-size: 50px;
   font-weight: 600;
   color: rgb(250, 104, 37);
-  
+
 }
 
 .contact-container {
@@ -197,5 +199,3 @@
 .contact-btn:hover {
   background-color: rgb(248, 136, 84);
 }
-
-

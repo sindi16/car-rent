@@ -1,0 +1,47 @@
+.vehicle-page-header {
+  background-image: url("../../images/vehicle-page-header-bg.jpg");
+  height: 450px;
+  background-size: cover;
+}
+
+.vehicle-data {
+  padding: 30px;
+  background-color: rgb(255 140 0 / 73%);
+  border-radius: 40px;
+  height: 350px;
+}
+
+
+.vehicle-data-inner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.vehicle-data-inner>h4 {
+  padding-bottom: 20px;
+  font-size: 50px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.vehicle-data-inner>h4>span {
+  font-size: 20px;
+}
+
+.vehicle-data-inner>ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.vehicle-data-inner>ul>li {
+  width: 100%;
+  overflow: hidden;
+}
+
+.car-attribute {
+  float: left;
+}
+
+.car-attr-response {
+  float: right;
+}

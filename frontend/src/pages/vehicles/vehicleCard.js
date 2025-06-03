@@ -1,13 +1,14 @@
 import { Card } from "react-bootstrap"
-const VehicleCard = () => {
+const VehicleCard = ({ car }) => {
+  console.log('cars', car);
   return (
     <>
       <Card className="vehicle-card">
         <Card.Img variant="top" src="/images/vehicles/vehicle1.jpg" />
         <Card.Body>
-          <Card.Title>Luxury Sedan</Card.Title>
+          <Card.Title>{car.brand} {car.model}</Card.Title>
           <Card.Text>
-            Experience the pinnacle of comfort and style with our luxury sedan, perfect for any occasion.
+            {car.description}
           </Card.Text>
         </Card.Body>
       </Card>

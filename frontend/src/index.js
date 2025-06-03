@@ -9,6 +9,7 @@ import Vehicles from "./pages/vehicles";
 import { CarProvider } from './context/CarContext';
 import AdminVehicles from './pages/Admin/Vehicles';
 import reportWebVitals from './reportWebVitals';
+import VehiclePage from "./pages/VehiclePage";
 import "./index.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -25,7 +26,7 @@ root.render(
         <Route path="/about" element={<About />} />
         <Route path="/reserve" element={<Contact />} />
         <Route path="/our-vehicles" element={<Vehicles />} />
-
+        <Route path="/vehicle/:id" element={<VehiclePage />} />
         <Route path="/admin-vehicles" element={<AdminVehicles />} />
 
       </Routes>
