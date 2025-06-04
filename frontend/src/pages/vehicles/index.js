@@ -1,3 +1,4 @@
+import { useCarContext } from '../../context/CarContext';
 import CustomNavbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import "./index.css"
@@ -5,6 +6,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import VehicleCard from './vehicleCard';
 
 const Vehicles = () => {
+  const { cars } = useCarContext();
+  // console.log('cars', cars);
   return (
     <>
       <div className="vehicles-background">
@@ -15,14 +18,19 @@ const Vehicles = () => {
             and a touch of sophistication.From premium cars to unforgettable experiences, we’re here to redefine the way you travel.</p>
         </div>
       </div>
-
       <Container className="vehicles-container">
         <Row>
-          <Col md={4} className="mb-4">
-            <VehicleCard />
-          </Col>
+          {cars.data?.map((car, index) => {
+            // console.log('cars', car);
+            return (
+              <Col key={index} md={4} className="mb-4">
+                <VehicleCard car={car} />
+              </Col>
+            )
+          })}
         </Row>
       </Container>
+
       <Footer />
     </>
   )
