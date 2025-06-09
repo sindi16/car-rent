@@ -9,9 +9,11 @@ import "./index.css";
 const VehiclePage = () => {
   return (
     <>
+      <div className="vehicle-body">
       <div className="vehicle-page-header">
         <CustomNavbar />
       </div>
+      
 
       <div className="page-container">
         <Container>
@@ -26,7 +28,7 @@ const VehiclePage = () => {
                   <li><span className="car-attribute">Year</span> <span className="car-attr-response">2022</span></li>
                   <li><span className="car-attribute">Type</span> <span className="car-attr-response">Sedan</span></li>
                   <li><span className="car-attribute">Color</span> <span className="car-attr-response">Black</span></li>
-                  <li><span className="car-attribute">Description</span> <span className="car-attr-response">Luxury sports car with advanced features</span></li>
+                  <li><span className="car-attribute">Description</span> <span className="car-attr-response">Luxury sports car</span></li>
                 </ul>
                 <Button variant="warning" className="book-button">Book Now</Button>
               </div>
@@ -74,8 +76,10 @@ const VehiclePage = () => {
           </Row>
         </Container>
       </div>
+      
 
       <Footer />
+      </div>
     </>
   );
 };
