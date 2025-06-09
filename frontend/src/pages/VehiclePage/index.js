@@ -10,9 +10,10 @@ const VehiclePage = () => {
   return (
     <>
       <div className="vehicle-body">
-      <div className="vehicle-page-header">
+       <div className="vehicle-page-header">     {/*if you want that image to be included like a background and for navbar include it in css of the part you have navbar */}
         <CustomNavbar />
       </div>
+  
       
 
       <div className="page-container">
