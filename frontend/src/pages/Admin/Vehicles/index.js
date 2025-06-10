@@ -83,9 +83,11 @@ const AdminVehicles = () => {
 
 
       <CreateVehicle open={showModal} close={handleClose} />
-
+          <h2>
+            Admin Vehicles Management
+          </h2>
     </>
-   
+  
   );
 }
 
