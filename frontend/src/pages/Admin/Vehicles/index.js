@@ -9,7 +9,7 @@ const AdminVehicles = () => {
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
 
-  const handleDelete = async(id) => {
+  const handleDelete = async (id) => {
     //console.log('Delete car with ID:', typeof id);
     const result = await deleteCar(id);
     console.log('Delete car result:', result);
@@ -85,6 +85,7 @@ const AdminVehicles = () => {
       <CreateVehicle open={showModal} close={handleClose} />
 
     </>
+   
   );
 }
 
