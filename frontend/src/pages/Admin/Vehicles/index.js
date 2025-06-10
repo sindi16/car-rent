@@ -41,9 +41,7 @@ const AdminVehicles = () => {
           )
         })
       }
-
       <CreateVehicle open={showModal} close={handleClose} />
-
     </>
   );
 }
