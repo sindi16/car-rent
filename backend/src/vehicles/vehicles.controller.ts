@@ -67,9 +67,6 @@ export class VehiclesController {
         }
     }
 
-
-
-
     @Delete(':id')
     public async deleteVehicle(@Param('id', ParseIntPipe) id: number): Promise<DeleteVehiclesResponse> {
         try {
