@@ -1,15 +1,25 @@
 import { useState } from 'react';
-import { Navbar, Nav, Container, Button } from 'react-bootstrap';
+import { Navbar, Nav, Container, Button, Table } from 'react-bootstrap';
 import CreateVehicle from './createModal';
 import { useCarContext } from '../../../context/CarContext';
 const AdminVehicles = () => {
 
-  const { cars } = useCarContext();
-
+  const { cars, deleteCar } = useCarContext();
   const [showModal, setShowModal] = useState(false);
-
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
+
+  const handleDelete = async(id) => {
+    //console.log('Delete car with ID:', typeof id);
+    const result = await deleteCar(id);
+    console.log('Delete car result:', result);
+    if (result.status === 200) {
+      console.log('Car deleted successfully');
+    } else {
+      console.error('Failed to delete car');
+    }
+  }
+
   return (
     <>
       <Navbar bg="dark" variant="dark" expand="lg">
@@ -41,6 +51,7 @@ const AdminVehicles = () => {
           )
         })
       }
+
       <CreateVehicle open={showModal} close={handleClose} />
     </>
   );

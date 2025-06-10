@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect } from "react";
-import { get_cars_service, create_cars_service } from "../Services/carServices";
+import { get_cars_service, create_cars_service, delete_car_service, get_car_by_id_service } from "../Services/carServices";
 
 const CarContext = createContext({});
 const CarProvider = (props) => {
@@ -32,7 +32,34 @@ const CarProvider = (props) => {
     }
   }
 
-  const values = { cars, setCars, createCar }
+  const deleteCar = async (id) => {
+    try {
+      const result = await delete_car_service(id);
+      //console.log('Delete car with ID:', result);
+      if (result.status === 200) {
+        getAllCart();
+        return result;
+      }
+    } catch (error) {
+      console.error('Error deleting car:', error);
+      throw error;
+    }
+  }
+
+  const getCarById = async (id) => {
+    try {
+      const result = await get_car_by_id_service(id);
+      //console.log('Delete car with ID:', result);
+      if (result.status === 200) {
+        return result.data;
+      }
+    } catch (error) {
+      console.error('Error deleting car:', error);
+      throw error;
+    }
+  }
+
+  const values = { cars, setCars, createCar, deleteCar, getCarById }
 
   return (
     <CarContext.Provider value={values}>

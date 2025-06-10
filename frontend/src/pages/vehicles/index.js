@@ -21,7 +21,6 @@ const Vehicles = () => {
       <Container className="vehicles-container">
         <Row>
           {cars.data?.map((car, index) => {
-            // console.log('cars', car);
             return (
               <Col key={index} md={4} className="mb-4">
                 <VehicleCard car={car} />

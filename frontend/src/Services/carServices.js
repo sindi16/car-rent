@@ -23,4 +23,15 @@ const create_cars_service = async (data) => {
   return result;
 }
 
-export { get_cars_service, create_cars_service }
+const delete_car_service = async(id)=>{
+  const result = await axios.delete(`${API_URL}/${id}`);
+  return result;
+}
+
+
+const get_car_by_id_service = async (id) => {
+  const result = await axios.get(`${API_URL}/${id}`);
+  return result;
+}
+
+export { get_cars_service, create_cars_service, delete_car_service, get_car_by_id_service }
