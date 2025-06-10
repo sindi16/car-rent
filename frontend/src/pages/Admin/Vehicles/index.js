@@ -41,20 +41,50 @@ const AdminVehicles = () => {
         </Button>
       </Container>
 
-      {
-        cars.data?.map((el, index) => {
-          console.log('el', el);
-          return (
-            <>
-              <h4>{el.brand} {el.model} {el.color}</h4>
-            </>
-          )
-        })
-      }
-
+      <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th>#ID</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Type</th>
+            <th>Year</th>
+            <th>Description</th>
+            <th>Available</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            cars.data?.map((el, index) => {
+              return (
+                <tr key={index}>
+                  <td>{el.id}</td>
+                  <td>{el.brand}</td>
+                  <td>{el.model}</td>
+                  <td>{el.type}</td>
+                  <td>{el.year}</td>
+                  <td>{el.description}</td>
+                  <td>{el.available ? "Available" : "Not Available"}</td>
+                  <td>
+                    <Button variant="primary">Edit</Button>
+                  </td>
+                  <td>
+                    <Button variant="danger" onClick={() => { handleDelete(el.id) }}>Delete</Button>
+                  </td>
+                </tr>
+              )
+            })
+          } 
+        </tbody>
+      </Table>
       <CreateVehicle open={showModal} close={handleClose} />
+          <h2>
+            Admin Vehicles Management
+          </h2>
     </>
-   
+  
   );
 }
 
