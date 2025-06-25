@@ -12,6 +12,7 @@ import reportWebVitals from './reportWebVitals';
 import VehiclePage from "./pages/VehiclePage";
 import "./index.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AdminBookings from '../src/pages/Admin/Booking'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,6 +29,7 @@ root.render(
         <Route path="/our-vehicles" element={<Vehicles />} />
         <Route path="/vehicle/:id" element={<VehiclePage />} />
         <Route path="/admin-vehicles" element={<AdminVehicles />} />
+        <Route path="/admin/bookings" element={<AdminBookings />} />
 
       </Routes>
     </BrowserRouter>

@@ -1,4 +1,5 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { BookingEntity } from 'src/booking/entity/booking.entity';
+import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
 
 @Entity('vehicles')
 export class VehicleEntity {
@@ -37,4 +38,7 @@ export class VehicleEntity {
 
   @Column('json')
   images: string[]
+
+  @OneToMany(() => BookingEntity, (booking) => booking.vehicle)
+  bookings: BookingEntity[];
 }

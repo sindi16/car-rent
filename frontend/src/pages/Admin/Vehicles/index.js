@@ -3,6 +3,8 @@ import { Navbar, Nav, Container, Button, Table } from 'react-bootstrap';
 import CreateVehicle from './createModal';
 import EditVehicle from './editModal';
 import { useCarContext } from '../../../context/CarContext';
+
+
 const AdminVehicles = () => {
 
   const { cars, deleteCar } = useCarContext();

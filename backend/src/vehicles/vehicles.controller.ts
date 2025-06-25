@@ -1,16 +1,23 @@
-import { Controller, Post, Get, Body, Put, HttpException, HttpStatus, ParseIntPipe, Param, Delete, UseInterceptors, UploadedFiles, Res } from '@nestjs/common';
+import { Controller, Post, Get, Body, Put, HttpException, HttpStatus, ParseIntPipe, Param, Delete, UseInterceptors, UploadedFiles, Res, UseGuards } from '@nestjs/common';
 import { VehiclesService } from './vehicles.service';
 import { VehicleDto } from './dto/vehicle.dto';
 import { VehicleResponse, GetVehiclesResponse, DeleteVehiclesResponse, UpdateVehicleResponse } from './response/vehicle.response';
 import { FileFieldsInterceptor } from '@nestjs/platform-express';
 import { diskStorage } from 'multer';
 import { Response } from 'express';
+import { AuthGuard } from 'src/guards/auth.guards';
+import { PermissionGuard } from 'src/guards/permission.guards';
+import { Roles } from '../decorator/roles.decorator';
+import { IsPublic } from 'src/decorator/public.decorator';
 
+
+@UseGuards(AuthGuard, PermissionGuard)
 @Controller('vehicles')
 export class VehiclesController {
 
     constructor(private readonly vehiclesService: VehiclesService) { }
 
+    @Roles('admin')
     @Post('create')
     @UseInterceptors(FileFieldsInterceptor(
         [{ name: 'images', maxCount: 4 }],
@@ -39,6 +46,7 @@ export class VehiclesController {
         }
     }
 
+    @IsPublic()
     @Get('all')
     public async getVehicles(): Promise<GetVehiclesResponse> {
         try {
@@ -53,6 +61,8 @@ export class VehiclesController {
         }
     }
 
+
+    @IsPublic()
     @Get(':id')
     public async getVehicleById(@Param('id', ParseIntPipe) id: number): Promise<VehicleResponse> {
         try {

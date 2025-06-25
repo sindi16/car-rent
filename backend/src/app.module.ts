@@ -7,14 +7,14 @@ import { VehiclesModule } from './vehicles/vehicles.module';
 import { BookingModule } from './booking/booking.module';
 import { UserEntity } from './users/entity/user.entity';
 import { VehicleEntity } from './vehicles/entity/vehicle.entity';
-
+import { BookingEntity } from './booking/entity/booking.entity';
 @Module({
   imports: [
     TypeOrmModule.forRootAsync({
       imports: [
         ConfigModule.forRoot({
           isGlobal: true,
-        })
+        }),
       ],
       inject: [ConfigService],
       useFactory: (configService: ConfigService) => ({
@@ -24,14 +24,14 @@ import { VehicleEntity } from './vehicles/entity/vehicle.entity';
         username: configService.get<string>("DB_USERNAME"),
         password: configService.get<string>("DB_PASSWORD"),
         database: configService.get<string>("DB_DATABASE"),
-        entities: [UserEntity, VehicleEntity],
+        entities: [UserEntity, VehicleEntity, BookingEntity], // ✅ add BookingEntity
         synchronize: true,
-      })
-    })
-    , UsersModule,
+      }),
+    }),
+    UsersModule,
     AuthModule,
     VehiclesModule,
-    BookingModule
-  ]
+    BookingModule,
+  ],
 })
 export class AppModule { }
